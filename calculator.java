@@ -195,6 +195,30 @@ public void actionPerformed(ActionEvent e) {
         resultDisplayed = false;
     }
 
+    else if(e.getSource()== addButton)
+    {
+        display.setText(display.getText() + "+");
+        resultDisplayed = false;
+    }
+
+    else if(e.getSource()== subButton)
+    {
+        display.setText(display.getText() + "-");
+        resultDisplayed = false;
+    }
+
+    else if(e.getSource()== mulButton)
+    {
+        display.setText(display.getText() + "*");
+        resultDisplayed = false;
+    }
+
+    else if(e.getSource()== divButton)
+    {
+        display.setText(display.getText() + "/");
+        resultDisplayed = false;
+    }
+
 
     if(e.getSource()== seven)
     {
@@ -258,30 +282,6 @@ public void actionPerformed(ActionEvent e) {
         {
             display.setText(text.substring(0, text.length() - 1));
         }
-    }
-    
-    else if(e.getSource()== addButton)
-    {
-        display.setText(display.getText()+ "+");
-
-    } 
-
-    else if(e.getSource()== subButton)
-    {
-        display.setText(display.getText()+ "-");
-
-    } 
-
-    else if(e.getSource()== mulButton)
-    {
-        display.setText(display.getText()+ "*");
-
-    } 
-
-    else if(e.getSource()== divButton)
-    {
-        display.setText(display.getText()+ "/");
-
     } 
 
 
